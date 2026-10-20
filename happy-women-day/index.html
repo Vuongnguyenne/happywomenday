@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050707">
+  <meta name="description" content="Một khu vườn nhỏ và lời chúc dịu dàng dành tặng mẹ Nhài nhân 20 tháng 10.">
+  <title> Vượng và Ngân gửi đến mẹ Nhài một chút yêu thương · 20/10</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main class="experience">
+    <div class="garden" aria-hidden="true">
+      <img class="garden-fallback " src="assets/flower-garden.jpg" alt="">
+      <canvas id="garden-canvas"></canvas>
+      <div class="fireflies" id="fireflies"></div>
+    </div>
+    <div class="vignette" aria-hidden="true"></div>
+    <header class="masthead">
+      <a aria-label='Về trang đầu' class='wordmark' href='#'><span class="flower-mark" aria-hidden="true">✳</span> Thay mặt con gái yêu của bố mẹ gửi đến Mẹ Nhài một chút yêu thương </a>
+      <span class="date">Chúc mừng ngày phụ nữ Việt Nam 20 <i>/</i> 10 <span class="date-year">2026</span></span>
+    </header>
+    <section class="greeting" aria-label="Lời chúc ngày Phụ nữ Việt Nam">
+      <div class="eyebrow"><span></span> DÀNH TẶNG NGƯỜI PHỤ NỮ ĐẶC BIỆT</div>
+      <h1>Một chút dịu dàng,<br>dành riêng <em>cho người phụ nữ xinh đẹp.</em></h1>
+      <p class="intro-copy">Có những điều đẹp đẽ chỉ chờ một lần chạm.<br>Một khu vườn nhỏ. Một lời chúc từ trái tim.</p>
+      <button class="open-garden" id="open-garden" type="button" disabled>
+        <span>Chúc mừng ngày 20/10</span><span class="button-arrow" aria-hidden="true">↗</span>
+      </button>
+      <p class="invitation" id="invitation">Đang chuẩn bị khu vườn…</p>
+    </section>
+    <section class="wish" aria-live="polite" aria-atomic="true">
+      <img src="assets/bg.jpg" alt="" style="width: 100%; height: 40%;object-fit: cover;">
+      <p class="wish-kicker">CHÚC MỪNG NGÀY PHỤ NỮ VIỆT NAM</p>
+      <h2>Chúc các mẹ Nhài luôn <br>rạng rỡ <em>như hoa.</em></h2>
+      <p>Mong các mẹ Nhài được yêu thương, được là chính mình,<br>và tìm thấy niềm vui trong những điều bé nhỏ.</p>
+      <span class="wish-signature">Hôm nay, và mỗi ngày sau nữa ♡</span>
+    </section>
+    <audio id="background-music" src="assets/music-bg.mp3" preload="auto" autoplay></audio>
+    <p class="music-hint" id="music-hint" role="status" hidden>Chạm vào trang để bật nhạc ♫</p>    
+    <footer class="footer">
+      <div class="footer-left">
+        <span class="dedication" id="dedication">MỘT KHU VƯỜN NHỎ, MỘT TẤM LÒNG</span>
+        <button class="text-button replay" id="replay" type="button" hidden><span aria-hidden="true">↻</span> Thắp sáng</button>
+      </div>
+      <div class="footer-controls">
+        <button class="text-button music" id="music-toggle" type="button" aria-pressed="false" aria-controls="background-music"><span class="music-icon" aria-hidden="true">♫</span> <span id="music-label" aria-live="polite">Phát Nhạc</span></button>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

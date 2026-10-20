@@ -1,0 +1,1 @@
+Hãy thêm file flower-garden.jpg và merry-go-round-of-life.mp3 vào thư mục assets này.
